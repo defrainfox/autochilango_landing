@@ -1,0 +1,386 @@
+body {
+  position: relative;
+  font-family: "DIN Next LT Pro Light", serif;
+  font-weight: 200;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: url(../images/general/bg.jpg) top center; }
+
+.center {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto; }
+
+.logo {
+  width: 285px;
+  height: 44px;
+  background: url(../images/general/logo.svg) center no-repeat;
+  background-size: cover;
+  margin: 218px 0 70px; }
+
+.app {
+  display: inline-block;
+  vertical-align: top;
+  width: 185px;
+  height: 60px; }
+  .app.applestore {
+    background: url(../images/general/applestore.png) center no-repeat;
+    background-size: cover; }
+  .app.googleplay {
+    background: url(../images/general/googleplay.png) center no-repeat;
+    background-size: cover;
+    margin-right: 10px; }
+
+.section {
+  overflow: hidden; }
+
+#home1 {
+  height: 854px;
+  color: #01E4E5; }
+  #home1 h1 {
+    font-size: 60px;
+    padding: 0 0 20px; }
+  #home1 p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 70px; }
+  #home1 #cards {
+    position: absolute;
+    right: -30px;
+    top: 60px;
+    width: 676px;
+    height: 755px;
+    background: url(../images/general/card.png) left no-repeat;
+    background-size: cover; }
+    #home1 #cards .card, #home1 #cards .card2 {
+      display: none; }
+    #home1 #cards .card {
+      position: absolute;
+      right: 0;
+      top: 123px;
+      width: 616px;
+      height: 611px;
+      background: url(../images/general/cards.png) center no-repeat;
+      z-index: 2; }
+    #home1 #cards .card2 {
+      position: absolute;
+      right: 0;
+      top: 38px;
+      width: 676px;
+      height: 755px;
+      background: url(../images/general/cards2.png) center no-repeat;
+      z-index: 1; }
+
+#home2 {
+  height: 1344px;
+  color: #01E4E5;
+  text-align: center; }
+  #home2 h2 {
+    margin: 150px 0 10px;
+    font-size: 30px; }
+  #home2 p {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px; }
+  #home2 #selector {
+    margin-top: 110px; }
+    #home2 #selector .selector, #home2 #selector .phone {
+      display: inline-block;
+      vertical-align: top; }
+    #home2 #selector .selector {
+      width: 444px;
+      margin-top: 108px; }
+      #home2 #selector .selector .item {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 82px;
+        margin-bottom: 42px; }
+        #home2 #selector .selector .item .cover {
+          display: none;
+          position: absolute;
+          width: 308px;
+          height: 326px;
+          background: url(../images/general/active.png) center no-repeat;
+          margin: -126px 0 0 -54px;
+          z-index: -1; }
+        #home2 #selector .selector .item .img {
+          margin: 0 auto 6px;
+          width: 50px;
+          height: 51px; }
+          #home2 #selector .selector .item .img.multas {
+            background: url(../images/icons/multas.png) 0 -50px; }
+          #home2 #selector .selector .item .img.tenencia {
+            background: url(../images/icons/tenencia.png) 0 -50px; }
+          #home2 #selector .selector .item .img.verificacion {
+            background: url(../images/icons/verificacion.png) 0 -50px; }
+          #home2 #selector .selector .item .img.circula {
+            background: url(../images/icons/circula.png) 0 -50px; }
+          #home2 #selector .selector .item .img.mapa {
+            background: url(../images/icons/mapa.png) 0 -50px; }
+          #home2 #selector .selector .item .img.corralones {
+            background: url(../images/icons/corralones.png) 0 -50px; }
+          #home2 #selector .selector .item .img.wizards {
+            background: url(../images/icons/wizards.png) 0 -50px; }
+          #home2 #selector .selector .item .img.seguros {
+            background: url(../images/icons/seguros.png) 0 -50px; }
+        #home2 #selector .selector .item p {
+          font-size: 15px;
+          color: #01E4E5; }
+        #home2 #selector .selector .item span {
+          display: none; }
+        #home2 #selector .selector .item.active .cover {
+          display: block; }
+        #home2 #selector .selector .item.active p {
+          color: #FFF; }
+        #home2 #selector .selector .item.active .img {
+          background-position: 0 0; }
+        #home2 #selector .selector .item:hover p {
+          color: #FFF; }
+        #home2 #selector .selector .item:hover .img {
+          background-position: 0 0; }
+      #home2 #selector .selector .line {
+        width: 100%;
+        height: 1px;
+        background: #FFF;
+        opacity: 0.1;
+        margin-bottom: 30px; }
+      #home2 #selector .selector .content {
+        color: #FFF;
+        padding: 0 40px;
+        font-size: 20px;
+        line-height: 25px; }
+    #home2 #selector .phone {
+      width: 560px;
+      height: 730px;
+      background: url(../images/phone/iphone1.png) center no-repeat;
+      background-size: cover; }
+      #home2 #selector .phone #screen {
+        width: 100%;
+        height: 100%;
+        background: url(../images/screens/multas.png) center no-repeat;
+        background-size: cover; }
+
+#home3 {
+  height: 940px; }
+  #home3 #extras {
+    text-align: center; }
+    #home3 #extras .phone, #home3 #extras .list {
+      display: inline-block;
+      vertical-align: top; }
+    #home3 #extras .phone {
+      position: relative;
+      width: 560px;
+      height: 730px;
+      margin-top: 80px;
+      background: url(../images/phone/iphone2.png) center no-repeat;
+      background-size: cover; }
+      #home3 #extras .phone video {
+        position: absolute;
+        left: 120px;
+        top: 90px; }
+    #home3 #extras .list {
+      width: 444px;
+      margin: 210px 0 0 0;
+      text-align: left; }
+      #home3 #extras .list h3 {
+        font-size: 25px;
+        color: #01E4E5; }
+      #home3 #extras .list p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFF;
+        margin: 4px 0 46px; }
+
+#footer {
+  height: 491px;
+  text-align: center;
+  overflow: hidden;
+  background: url(../images/general/bg_footer.jpg) center no-repeat;
+  background-size: cover; }
+  #footer h2 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #094454;
+    margin-top: 110px; }
+  #footer h4 {
+    font-size: 35px;
+    color: #094454;
+    padding: 40px 0; }
+  #footer .box {
+    width: 100%;
+    height: 64px;
+    background: #CFDADD;
+    margin-top: 82px; }
+    #footer .box .icon {
+      float: left;
+      width: 64px;
+      height: 64px;
+      background: url(../images/general/minilogo.png) center no-repeat; }
+    #footer .box .actions {
+      float: right;
+      overflow: hidden; }
+      #footer .box .actions a {
+        float: left;
+        color: #094454; }
+        #footer .box .actions a p {
+          font-size: 16px;
+          padding: 26px 20px; }
+      #footer .box .actions .fb, #footer .box .actions .tw {
+        width: 64px;
+        height: 64px; }
+      #footer .box .actions .fb {
+        background: url(../images/icons/fb.png) center no-repeat; }
+      #footer .box .actions .tw {
+        background: url(../images/icons/tw.png) center no-repeat; }
+
+@media all and (max-width: 1023px) {
+  .center {
+    width: 100%; }
+
+  .section {
+    width: 100%;
+    overflow: hidden; }
+
+  #home1 {
+    text-align: center; }
+    #home1 .logo {
+      width: 218px;
+      height: 33px;
+      background-size: cover;
+      margin: 67px auto 40px; }
+    #home1 h1 {
+      font-size: 30px;
+      margin-bottom: 30px; }
+    #home1 p {
+      font-size: 16px;
+      line-height: 25px;
+      max-width: 230px;
+      margin: 0 auto 60px; }
+      #home1 p br {
+        display: none; }
+    #home1 .app {
+      width: 132px;
+      height: 39px; }
+    #home1 #cards {
+      top: 440px;
+      width: 100%;
+      height: 378px;
+      left: 50%;
+      right: 0;
+      margin-left: -160px;
+      background: url(../images/general/card.png) center no-repeat;
+      background-size: cover; }
+      #home1 #cards .card, #home1 #cards .card2 {
+        display: none; }
+
+  #home2 {
+    text-align: center;
+    height: auto; }
+    #home2 h2 {
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 280px;
+      margin: 92px auto 10px; }
+    #home2 p {
+      font-size: 18px;
+      line-height: 25px;
+      max-width: 230px;
+      margin: 0 auto; }
+      #home2 p br {
+        display: none; }
+    #home2 #selector {
+      margin: 0 auto;
+      width: 100%; }
+      #home2 #selector .selector {
+        width: 280px;
+        margin-top: 60px; }
+        #home2 #selector .selector .img {
+          background-position: 0 -50px !important; }
+        #home2 #selector .selector .item {
+          width: 270px;
+          height: auto;
+          text-align: center;
+          margin-bottom: 40px; }
+          #home2 #selector .selector .item p {
+            font-size: 18px;
+            color: #01E4E5 !important;
+            margin: 20px auto 10px; }
+          #home2 #selector .selector .item span {
+            display: block !important;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFF;
+            max-width: 270px; }
+        #home2 #selector .selector .content, #home2 #selector .selector .line {
+          display: none; }
+      #home2 #selector .phone {
+        display: none; }
+
+  #home3 {
+    height: auto; }
+    #home3 #extras .phone {
+      width: 300px;
+      height: 400px;
+      background: url(../images/video/mobile.png) center no-repeat;
+      background-size: 100%;
+      margin: 0 auto; }
+      #home3 #extras .phone video {
+        display: none; }
+    #home3 #extras .list {
+      padding-top: 70px;
+      margin: 40px auto 60px;
+      text-align: center;
+      max-width: 270px; }
+      #home3 #extras .list h3 {
+        font-size: 22px;
+        line-height: 23px; }
+      #home3 #extras .list p {
+        font-size: 16px;
+        line-height: 25px; }
+        #home3 #extras .list p br {
+          display: none; }
+
+  #footer {
+    height: auto; }
+    #footer h2 {
+      font-size: 16px;
+      line-height: 25px;
+      max-width: 270px;
+      margin: 60px auto 40px; }
+    #footer h4 {
+      font-size: 25px;
+      padding: 0 0 50px; }
+    #footer .apps .app {
+      width: 132px;
+      height: 39px; }
+    #footer .box {
+      border-top: 1px solid #FFF;
+      border-bottom: 1px solid #FFF; }
+      #footer .box .icon {
+        float: none;
+        margin: 0 auto; }
+      #footer .box .actions {
+        width: 100%; }
+        #footer .box .actions a {
+          display: block; }
+          #footer .box .actions a.aviso {
+            width: 100%;
+            border-bottom: 1px solid #FFF; }
+            #footer .box .actions a.aviso p {
+              font-size: 16px;
+              padding: 28px 0 22px; }
+          #footer .box .actions a.nt {
+            border-bottom: 1px solid #FFF;
+            width: 49.8%; }
+            #footer .box .actions a.nt.first {
+              border-right: 1px solid #FFF; }
+            #footer .box .actions a.nt .fb, #footer .box .actions a.nt .tw {
+              display: block;
+              margin: 0 auto; }
+          #footer .box .actions a.email {
+            width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

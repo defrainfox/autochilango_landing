@@ -1,0 +1,133 @@
+= partial("includes/header")
+
+%body
+	.section#home1
+		.center
+			.logo
+			%h1 Una app, todo tu auto
+			%p
+				Todo lo que necesitas para sobrevivir con tu 
+				%br
+				auto en la ciudad, desde tu teléfono.  
+			%a.app.googleplay{:href=>''}
+			%a.app.applestore{:href=>''}
+		#cards
+			.card
+			.card2
+	.section#home2
+		.center
+			%h2 Auto Chilango es la herramienta más completa
+			%p
+				para conductores de autos particulares, motos, taxis 
+				%br
+				y placas especiales de CDMX y Estado de México.
+			#selector
+				.selector
+					.item.active{:tag=>'../images/screens/multas.png'}
+						.cover
+						.img.multas
+						%p Multas y reglamento 
+						%span Consulta tus infracciones, cambios en el Reglamento y tarifas en tiempo real.
+					.item{:tag=>'../images/screens/tenencia.png'}
+						.cover
+						.img.tenencia
+						%p Tenencia y trámites
+						%span Recordatorios de pago de tenencia e información de la situación legal.
+					.item{:tag=>'../images/screens/verificacion.png'}
+						.cover
+						.img.verificacion
+						%p Verificación
+						%span Recibe notificaciones cuando te toque verificar y encuentra Verificentros cercanos a ti.
+					.item{:tag=>'../images/screens/hoyno.png'}
+						.cover
+						.img.circula
+						%p Hoy no circula
+						%span Recibe alertas cuando tu  auto no pueda circular en la ciudad. 
+					.item{:tag=>'../images/screens/mapa.png'}
+						.cover
+						.img.mapa
+						%p Mapa de servicios
+						%span Encuentra y traza rutas a estacionamientos, gasolineras, talleres... 
+					.item{:tag=>'../images/screens/corralones.png'}
+						.cover
+						.img.corralones
+						%p Corralones
+						%span Qué hacer y a dónde ir si te  lleva la grúa.
+					.item{:tag=>'../images/screens/wizards.png'}
+						.cover
+						.img.wizards
+						%p Wizards
+						%span Guía paso a paso en caso de choque, infracción, fallas mecánicas, robo…
+					.item{:tag=>'../images/screens/seguros.png'}
+						.cover
+						.img.seguros
+						%p Seguros
+						%span Contrata y administra un seguro para tu auto desde la app.
+					.line
+					.content Consulta tus infracciones, cambios en el reglamento y tarifas en tiempo real.  
+				.phone
+					#screen
+	.section#home3
+		.center
+			#extras
+				.phone
+					%video{:width=>'302', :height=>'540',:autoplay=>'',:preload=>'auto',:loop=>''}
+						%source{:src=>'../images/video/phone.mp4',:type=>'video/mp4'}
+				.list
+					%h3
+						Un perfil para 
+						%br
+						todas tus placas
+					%p
+						Administra las placas de todos los autos
+						%br
+						que necesites, desde un solo perfil.
+					%h3
+						Conoce tu auto
+						%br
+						mejor que nadie
+					%p
+						Ingresa tus placas y consulta historial
+						%br
+						de servicios, choques, refacciones y
+						%br
+						fallas más comunes según la marca y 
+						%br
+						modelo de tu auto. 
+
+					%h3
+						Tus datos
+						%br
+						siempre seguros
+					%p
+						¿Cambiaste de teléfono? Ahora puedes
+						%br
+						recuperar la información e historial de
+						%br
+						tus autos al ingresar desde tu cuenta. 
+	#footer
+		%h2
+			Toma el control de los trámites, documentación, pagos, historial
+			%br
+			y todos los servicios relacionados con tu auto, desde tu teléfono.  
+		%h4 Descarga la app
+		.apps
+			%a.app.googleplay{:href=>''}
+			%a.app.applestore{:href=>''}
+		.box
+			.icon
+			.actions
+				%a.aviso{:href=>''}
+					%p Aviso de privacidad
+				%a.nt.first{:href=>''}
+					.fb
+				%a.nt{:href=>''}
+					.tw
+				%a.email{:href=>''}
+					%p info@autochilango.com
+
+
+
+
+			
+

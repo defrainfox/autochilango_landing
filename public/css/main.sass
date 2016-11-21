@@ -1,0 +1,407 @@
+$blue: #01E4E5
+$white: #FFF
+$green: #094454
+
+
+//FONTS
+$regular: 'DIN Next LT Pro', serif
+$light: 'DIN Next LT Pro Light', serif
+
+body
+	position: relative
+	font-family: $light
+	font-weight: 200
+	width: 100%
+	height: 100%
+	min-height: 100%
+	background: url(../images/general/bg.jpg) top center
+
+.center
+	position: relative
+	width: 1024px
+	margin: 0 auto
+
+.logo
+	width: 285px
+	height: 44px
+	background: url(../images/general/logo.svg) center no-repeat
+	background-size: cover
+	margin: 218px 0 70px
+
+.app
+	display: inline-block
+	vertical-align: top
+	width: 185px
+	height: 60px
+	&.applestore
+		background: url(../images/general/applestore.png) center no-repeat
+		background-size: cover
+	&.googleplay
+		background: url(../images/general/googleplay.png) center no-repeat
+		background-size: cover
+		margin-right: 10px
+
+.section
+	overflow: hidden
+
+#home1
+	height: 854px
+	color: $blue
+	h1
+		font-size: 60px
+		padding: 0 0 20px
+	p
+		font-size: 25px
+		line-height: 30px
+		margin-bottom: 70px
+	#cards
+		position: absolute
+		right: -30px
+		top: 60px
+		width: 676px
+		height: 755px
+		background: url(../images/general/card.png) left no-repeat
+		background-size: cover
+		.card, .card2
+			display: none
+		.card
+			position: absolute
+			right: 0
+			top: 123px
+			width: 616px
+			height: 611px
+			background: url(../images/general/cards.png) center no-repeat
+			z-index: 2
+		.card2
+			position: absolute
+			right: 0
+			top: 38px
+			width: 676px
+			height: 755px
+			background: url(../images/general/cards2.png) center no-repeat
+			z-index: 1
+#home2
+	height: 1344px
+	color: $blue
+	text-align: center
+	h2
+		margin: 150px 0 10px
+		font-size: 30px
+	p
+		color: $white
+		font-size: 20px
+		line-height: 30px
+	#selector
+		margin-top: 110px
+		.selector, .phone
+			display: inline-block
+			vertical-align: top
+		.selector
+			width: 444px
+			margin-top: 108px
+			.item
+				cursor: pointer
+				position: relative
+				display: inline-block
+				width: 200px
+				height: 82px
+				margin-bottom: 42px
+				.cover
+					display: none
+					position: absolute
+					width: 308px
+					height: 326px
+					background: url(../images/general/active.png) center no-repeat
+					margin: -126px 0 0 -54px
+					z-index: -1
+				.img
+					margin: 0 auto 6px
+					width: 50px
+					height: 51px
+					&.multas
+						background: url(../images/icons/multas.png) 0 -50px
+					&.tenencia
+						background: url(../images/icons/tenencia.png) 0 -50px
+					&.verificacion
+						background: url(../images/icons/verificacion.png) 0 -50px
+					&.circula
+						background: url(../images/icons/circula.png) 0 -50px
+					&.mapa
+						background: url(../images/icons/mapa.png) 0 -50px
+					&.corralones
+						background: url(../images/icons/corralones.png) 0 -50px
+					&.wizards
+						background: url(../images/icons/wizards.png) 0 -50px
+					&.seguros
+						background: url(../images/icons/seguros.png) 0 -50px
+				p
+					font-size: 15px
+					color: $blue
+				span
+					display: none
+				&.active
+					.cover
+						display: block
+					p
+						color: $white
+					.img
+						background-position: 0 0
+				&:hover
+					p
+						color: $white
+					.img
+						background-position: 0 0
+			.line
+				width: 100%
+				height: 1px
+				background: $white
+				opacity: 0.1
+				margin-bottom: 30px
+			.content
+				color: $white
+				padding: 0 40px
+				font-size: 20px
+				line-height: 25px
+		.phone
+			width: 560px
+			height: 730px
+			background: url(../images/phone/iphone1.png) center no-repeat
+			background-size: cover
+			#screen
+				width: 100%
+				height: 100%
+				background: url(../images/screens/multas.png) center no-repeat
+				background-size: cover
+#home3
+	height: 940px
+	#extras
+		text-align: center
+		.phone, .list
+			display: inline-block
+			vertical-align: top
+		.phone
+			position: relative
+			width: 560px
+			height: 730px
+			margin-top: 80px
+			background: url(../images/phone/iphone2.png) center no-repeat
+			background-size: cover
+			video
+				position: absolute
+				left: 120px
+				top: 90px
+		.list
+			width: 444px
+			margin: 210px 0 0 0
+			text-align: left
+			h3
+				font-size: 25px
+				color: $blue
+			p
+				font-size: 18px
+				line-height: 25px
+				color: $white
+				margin: 4px 0 46px
+#footer
+	height: 491px
+	text-align: center
+	overflow: hidden
+	background: url(../images/general/bg_footer.jpg) center no-repeat
+	background-size: cover
+	h2
+		font-size: 20px
+		line-height: 30px
+		color: $green
+		margin-top: 110px
+	h4
+		font-size: 35px
+		color: $green
+		padding: 40px 0
+	.box
+		width: 100%
+		height: 64px
+		background: #CFDADD
+		margin-top: 82px
+		.icon
+			float: left
+			width: 64px
+			height: 64px
+			background: url(../images/general/minilogo.png) center no-repeat
+		.actions
+			float: right
+			overflow: hidden
+			a
+				float: left
+				color: $green
+				p
+					font-size: 16px
+					padding: 26px 20px
+			.fb, .tw
+				width: 64px
+				height: 64px
+			.fb
+				background: url(../images/icons/fb.png) center no-repeat
+			.tw
+				background: url(../images/icons/tw.png) center no-repeat
+
+@media all and (max-width: 1023px)
+	.center
+		width: 100%
+	.section
+		width: 100%
+		overflow: hidden
+	#home1
+		text-align: center
+		.logo
+			width: 218px
+			height: 33px
+			background-size: cover
+			margin: 67px auto 40px
+		h1
+			font-size: 30px
+			margin-bottom: 30px
+		p
+			font-size: 16px
+			line-height: 25px
+			max-width: 230px
+			margin: 0 auto 60px
+			br
+				display: none
+		.app
+			width: 132px
+			height: 39px
+		#cards
+			top: 440px
+			width: 100%
+			height: 378px
+			left: 50%
+			right: 0
+			margin-left: -160px
+			background: url(../images/general/card.png) center no-repeat
+			background-size: cover
+			.card, .card2
+				display: none
+
+	#home2
+		text-align: center
+		height: auto
+		h2
+			font-size: 22px
+			line-height: 30px
+			max-width: 280px
+			margin: 92px auto 10px
+		p
+			font-size: 18px
+			line-height: 25px
+			max-width: 230px
+			margin: 0 auto
+			br
+				display: none
+		#selector
+			margin: 0 auto
+			width: 100%
+			.selector
+				width: 280px
+				margin-top: 60px
+				.img
+					background-position: 0 -50px !important
+				.item
+					width: 270px
+					height: auto
+					text-align: center
+					margin-bottom: 40px
+					p
+						font-size: 18px
+						color: $blue !important
+						margin: 20px auto 10px
+					span
+						display: block !important
+						font-size: 16px
+						line-height: 25px
+						color: #FFF
+						max-width: 270px
+				.content, .line
+					display: none
+			.phone
+				display: none
+
+	#home3
+		height: auto
+		#extras
+			.phone
+				width: 300px
+				height: 400px
+				background: url(../images/video/mobile.png) center no-repeat
+				background-size: 100%
+				margin: 0 auto
+				video
+					display: none
+			.list
+				padding-top: 70px
+				margin: 40px auto 60px
+				text-align: center
+				max-width: 270px
+				h3
+					font-size: 22px
+					line-height: 23px
+				p
+					font-size: 16px
+					line-height: 25px
+					br
+						display: none
+
+	#footer
+		height: auto
+		h2
+			font-size: 16px
+			line-height: 25px
+			max-width: 270px
+			margin: 60px auto 40px
+		h4
+			font-size: 25px
+			padding: 0 0 50px
+		.apps
+			.app
+				width: 132px
+				height: 39px
+		.box
+			border-top: 1px solid #FFF
+			border-bottom: 1px solid #FFF
+			.icon
+				float: none
+				margin: 0 auto
+			.actions
+				width: 100%
+				a
+					display: block
+					&.aviso
+						width: 100%
+						border-bottom: 1px solid #FFF
+						p
+							font-size: 16px
+							padding: 28px 0 22px
+					&.nt
+						border-bottom: 1px solid #FFF
+						width: 49.8%
+						&.first
+							border-right: 1px solid #FFF
+						.fb, .tw
+							display: block
+							margin: 0 auto
+					&.email
+						width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
